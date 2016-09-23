@@ -22,7 +22,7 @@ end
 
 I = R~=0;
 
-iterations = 5000;
+iterations = 1000;
 
 mean_rating = mean(train_vec(:, 3));
 
@@ -50,3 +50,5 @@ for i =1:iterations
         V(:, v) = V(:, v) - learning_rate*d_v;
     end
 end
+
+save latentData U V;
