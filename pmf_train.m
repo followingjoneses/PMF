@@ -22,6 +22,8 @@ end
 
 I = R~=0;
 
+save ratingData.mat R I
+
 iterations = 1000;
 
 mean_rating = mean(train_vec(:, 3));
